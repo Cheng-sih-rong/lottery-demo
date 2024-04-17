@@ -2,7 +2,7 @@ import "./App.scss";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import list from "../src/list.js";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 function App() {
   const [isDefault, setIsDefault] = useState(true);
