@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/lottery-demo/static/css/main.dc98e96d.css",
-    "main.js": "/lottery-demo/static/js/main.eb758b5d.js",
+    "main.js": "/lottery-demo/static/js/main.c6855e58.js",
     "static/js/453.a7cb195f.chunk.js": "/lottery-demo/static/js/453.a7cb195f.chunk.js",
     "static/media/4.jpg": "/lottery-demo/static/media/4.35838d27229b208436a5.jpg",
     "static/media/1.jpg": "/lottery-demo/static/media/1.115c8765a517bd008f04.jpg",
+    "static/media/7.jpg": "/lottery-demo/static/media/7.1ac94fae57355d268395.jpg",
     "static/media/6.jpg": "/lottery-demo/static/media/6.fc552ec1e3605fa359da.jpg",
     "static/media/5.jpg": "/lottery-demo/static/media/5.a1023100631626d3c241.jpg",
     "static/media/2.jpg": "/lottery-demo/static/media/2.6bdc6c4db305adad0776.jpg",
     "static/media/3.jpg": "/lottery-demo/static/media/3.15f7c8ba39f7b7c59c1c.jpg",
     "index.html": "/lottery-demo/index.html",
     "main.dc98e96d.css.map": "/lottery-demo/static/css/main.dc98e96d.css.map",
-    "main.eb758b5d.js.map": "/lottery-demo/static/js/main.eb758b5d.js.map",
+    "main.c6855e58.js.map": "/lottery-demo/static/js/main.c6855e58.js.map",
     "453.a7cb195f.chunk.js.map": "/lottery-demo/static/js/453.a7cb195f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc98e96d.css",
-    "static/js/main.eb758b5d.js"
+    "static/js/main.c6855e58.js"
   ]
 }
