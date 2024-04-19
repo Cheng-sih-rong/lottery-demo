@@ -67,7 +67,6 @@ function App() {
         <Box
           height={"90vh"}
           width={"80vh"}
-          // my={4}
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -80,7 +79,7 @@ function App() {
           ) : (
             <img
               className="max-h-[100%] w-auto"
-              src={process.env.PUBLIC_URL + `/photo/${num}.jpg`}
+              src={require(`../public/photo/${num}.jpg`)}
               alt={num}
             />
           )}

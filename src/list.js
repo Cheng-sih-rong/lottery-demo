@@ -5,6 +5,7 @@ const list = {
   4: "河馬",
   5: "祥瑞",
   6: "Ivy孟瑄 ",
+  7: "雅絹",
 };
 
 export default list;
