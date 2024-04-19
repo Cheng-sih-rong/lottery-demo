@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 function App() {
   const [isDefault, setIsDefault] = useState(true);
   const [isActive, setIsActive] = useState(false);
-  // const length = useRef(Object.keys(list).length);
+  const [counters] = useState(Object.keys(list));
   // const listLength = Object.keys(list).length;
   const [num, setNum] = useState(1);
 
@@ -65,7 +65,7 @@ function App() {
     <>
       <div className="App flex justify-center mt-7">
         <Box
-          height={"90vh"}
+          height={"85vh"}
           width={"80vh"}
           display="flex"
           alignItems="center"
@@ -115,6 +115,31 @@ function App() {
             ""
           )}
         </div>
+      </div>
+      <div className="flex gap-4 mt-4 mx-auto justify-center">
+        {counters.map(function (object, i) {
+          return (
+            <Box
+              key={i}
+              height={"50px"}
+              width={"50px"}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              p={"auto"}
+              sx={{
+                border: "1px solid orange",
+                backgroundColor: num === i + 1 && !isDefault ? "orange" : "",
+              }}
+            >
+              <img
+                className="max-h-[100%] w-auto"
+                src={require(`../public/photo/${i + 1}.jpg`)}
+                alt={i + 1}
+              />
+            </Box>
+          );
+        })}
       </div>
     </>
   );
