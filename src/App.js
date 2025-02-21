@@ -31,6 +31,7 @@ function App() {
     const listLength = Object.keys(list).length;
     intervalRef.current = setInterval(() => {
       setNum((prevNum) => {
+        console.log();
         return Math.floor(Math.random() * listLength) + 1;
       });
     }, 100);
@@ -56,17 +57,19 @@ function App() {
 
   const buttonSx = {
     marginTop: 3,
-    width: 200,
-    height: 60,
-    fontSize: 24,
+    width: 100,
+    height: 40,
+    fontSize: 12,
+    marginLeft:2
   };
 
   return (
     <>
-      <div className="App flex justify-center mt-7">
+    <div className="h-[100vh - 20px]">
+      <div className="App flex justify-center mt-5 ">
         <Box
-          height={"85vh"}
-          width={"80vh"}
+          height={"80vh"}
+          width={"60vw"}
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -75,7 +78,7 @@ function App() {
           sx={{ border: "2px solid grey" }}
         >
           {isDefault ? (
-            <p className="text-[50px]">生日好禮抽抽抽</p>
+            <p className="text-[40px]">生日好禮抽抽抽</p>
           ) : (
             <img
               className="max-h-[100%] w-auto"
@@ -85,16 +88,16 @@ function App() {
           )}
         </Box>
 
-        <div className="w-[20vw] my-auto">
+        <div className="w-[30vw] my-auto">
           {" "}
-          <p className="text-[45px] ml-2">
+          <p className="text-[24px] ml-2">
             {!isActive && !isDefault ? `恭喜${list[num]}!` : " "}
           </p>
           {!isActive && isDefault ? (
             <Button
               variant="contained"
               onClick={start}
-              size="large"
+              size="medium"
               sx={buttonSx}
             >
               開始抽獎
@@ -116,13 +119,13 @@ function App() {
           )}
         </div>
       </div>
-      <div className="flex gap-4 mt-4 mx-auto justify-center">
+      <div className="flex gap-3 mt-4 mx-auto justify-center ">
         {counters.map(function (object, i) {
           return (
             <Box
               key={i}
-              height={"50px"}
-              width={"50px"}
+              height={"30px"}
+              width={"30px"}
               display="flex"
               alignItems="center"
               justifyContent="center"
@@ -135,13 +138,15 @@ function App() {
               <img
                 className="max-h-[100%] w-auto"
                 src={require(`../public/photo/${i + 1}.jpg`)}
-                alt={i + 1}
+                alt={i }
               />
             </Box>
           );
         })}
       </div>
+      </div>
     </>
+
   );
 }
 
